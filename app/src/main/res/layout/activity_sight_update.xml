@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sightUpdate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="景点更新界面"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#aa000000" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="景点编号:"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_sightID"
+            android:hint="请输入景点编号(字母或数字)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="景点名称:"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_sightName"
+            android:hint="请输入景点名称"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="景点简介:"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_sightIntro"
+            android:hint="请输入景点简介"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="x坐标:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_sightX"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="number"
+            android:hint="请输入x坐标" />
+
+        <TextView
+            android:layout_width="79dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:text="y坐标:"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_sightY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text_bg"
+            android:inputType="number"
+            android:hint="请输入x坐标" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:textSize="22dp"
+        android:text="新增景点信息"
+        android:layout_marginTop="15dp"
+        android:layout_width="206dp"
+        android:layout_gravity="center"
+        android:layout_height="61dp" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:textSize="22dp"
+        android:text="更新景点信息"
+        android:layout_marginTop="15dp"
+        android:layout_width="206dp"
+        android:layout_gravity="center"
+        android:layout_height="61dp" />
+
+</LinearLayout>

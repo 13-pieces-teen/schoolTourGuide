@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".queryRoad">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="79dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="路径查询系统"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="起点:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入起点编号"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="终点:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_last"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入终点编号"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_all"
+            android:text="查询所有路径"
+            android:layout_marginTop="20dp"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btn_shortest"
+            android:text="查询最短路径"
+            android:layout_marginTop="20dp"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roadAdd">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="437dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="176dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="路径添加管理"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="起点:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入起点"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="终点:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_last"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入终点"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="间距:"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/et_length"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_bg"
+                android:hint="请输入间距"
+                android:inputType="number"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="保存"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
